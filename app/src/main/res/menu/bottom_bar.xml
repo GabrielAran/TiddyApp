@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/calendarioDiario"
+        android:icon="@drawable/icon_event" />
+    <item
+        android:id="@+id/perezoso"
+        android:icon="@drawable/icono_tiddy2smbrs" />
+    <item
+        android:id="@+id/fragmentContainerTiendaHistorial"
+        android:icon="@drawable/ticoins_icon" />
+    <item
+        android:id="@+id/configuracion"
+        android:icon="@drawable/settings_icon" />
+</menu>

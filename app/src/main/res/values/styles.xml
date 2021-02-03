@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorPrimary">#1248BE</item>
+        <item name="colorPrimaryDark">#1248BE</item>
+        <item name="colorAccent">#1248BE</item>
+    </style>
+
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorControlNormal">#00FFFFFF</item>
+        <item name="android:textSize">22dp</item>
+        <item name="fontFamily">@font/baloo</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="LetraApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/baloo</item>
+    </style>
+
+    <style name="Calendar" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#3F51B5</item>
+        <item name="colorAccent">#3F51B5</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <item name="fontFamily">@font/baloo</item>
+
+    </style>
+
+
+
+</resources>

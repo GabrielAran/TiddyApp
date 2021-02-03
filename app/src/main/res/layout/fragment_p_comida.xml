@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout23"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_de_app"
+    tools:context=".App.Perezoso.PComida">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifETiddyC"
+        android:layout_width="225dp"
+        android:layout_height="429dp"
+        android:background="@drawable/tiddy_triste"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIncrementoC"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="292dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gifETiddy"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackground"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/btnDecrementoC"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="224dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gifETiddy"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackground"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <Button
+        android:id="@+id/btnComida2Principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDecrementoC"
+        app:layout_constraintVertical_bias="0.136" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

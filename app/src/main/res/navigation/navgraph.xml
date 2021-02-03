@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/logIn">
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.proyectofinal.Fragments.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_logIn"
+            app:destination="@id/logIn" />
+        <action
+            android:id="@+id/action_registro_to_confirmacion"
+            app:destination="@id/confirmacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/logIn"
+        android:name="com.example.proyectofinal.Fragments.LogIn"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logIn_to_registro"
+            app:destination="@id/registro" />
+        <action
+            android:id="@+id/action_logIn_to_introtuccionCuestionario"
+            app:destination="@id/introtuccionCuestionario" />
+        <action
+            android:id="@+id/action_logIn_to_recContrasena"
+            app:destination="@id/recContrasena" />
+        <action
+            android:id="@+id/action_logIn_to_introduccionCuestionario"
+            app:destination="@id/introduccionCuestionario" />
+        <action
+            android:id="@+id/action_logIn_to_introduccionCuestionario2"
+            app:destination="@id/introduccionCuestionario" />
+        <action
+            android:id="@+id/action_logIn_to_introduccionCuestionario3"
+            app:destination="@id/introduccionCuestionario" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmacion"
+        android:name="com.example.proyectofinal.Fragments.Confirmacion"
+        android:label="fragment_confirmacion"
+        tools:layout="@layout/fragment_confirmacion" >
+        <argument
+            android:name="idUsuario"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_confirmacion_to_introduccionCuestionario"
+            app:destination="@id/introduccionCuestionario" />
+    </fragment>
+    <fragment
+        android:id="@+id/introtuccionCuestionario"
+        android:name="com.example.proyectofinal.CuestionarioFragments.IntrotuccionCuestionario"
+        android:label="fragment_introtuccion_cuestionario"
+        tools:layout="@layout/fragment_introtuccion_cuestionario" >
+        <argument
+            android:name="idUsuario"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_introtuccionCuestionario_to_logIn"
+            app:destination="@id/logIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/recContrasena"
+        android:name="com.example.proyectofinal.Fragments.RecContrasena"
+        android:label="fragment_rec_contrasena"
+        tools:layout="@layout/fragment_rec_contrasena" />
+    <fragment
+        android:id="@+id/introduccionCuestionario"
+        android:name="com.example.proyectofinal.CuestionarioFragments.IntroduccionCuestionario"
+        android:label="fragment_introduccion_cuestionario"
+        tools:layout="@layout/fragment_introduccion_cuestionario" />
+</navigation>

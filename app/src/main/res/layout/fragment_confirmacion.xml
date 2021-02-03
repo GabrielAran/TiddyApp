@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_de_app"
+    android:foregroundGravity="center"
+    tools:context=".Fragments.Confirmacion">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="216dp"
+        android:layout_height="61dp"
+        android:background="@drawable/titulo_app"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUsuarioConfirmacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewUsuarioConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:textColor="#1248BE"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTextoConfirmar"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+    <TextView
+        android:id="@+id/textViewTextoConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/baloo"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#1248BE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmarEmail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnConfirmarEmail"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#1248BE"
+        android:text="Confirmar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="82dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

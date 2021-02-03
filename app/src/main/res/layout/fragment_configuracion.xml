@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27B2F3"
+    android:orientation="vertical"
+    tools:context=".App.Configuracion.Configuracion">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Configuracion"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF" />
+
+    <Button
+
+        android:id="@+id/btnC2Cu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/cuenta"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Cuenta"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnC2T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/tema"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Tema"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnC2N"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/notificaciones"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Notificaciones"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnC2A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/ayuda"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Ayuda"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnC2ADN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/acerca_de_nosotros"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Acerca de nosotros"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnC2F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/feedback"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:text="Feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App.FragmentContainerTiendaHistorial">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutTiendaHistorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#1248BE"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerTiendaHistorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#FFFFFF" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerTiendaHistorial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutTiendaHistorial">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <TextView
+        android:id="@+id/txtMonedas"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:background="@drawable/recuadrodinero"
+        android:drawableEnd="@drawable/ticoins"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#040404"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

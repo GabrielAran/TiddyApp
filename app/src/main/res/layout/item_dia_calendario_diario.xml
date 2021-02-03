@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#1248BE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1248BE"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exSevenMonthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:text="Jun" />
+
+        <TextView
+            android:id="@+id/exSevenDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:text="24" />
+
+        <TextView
+            android:id="@+id/exSevenDayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            tools:text="Mon" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/day_dot"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/exSevenDayDot"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/day_dot"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/day_dot"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/exSevenSelectedView"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF" />
+
+</FrameLayout>
+
+

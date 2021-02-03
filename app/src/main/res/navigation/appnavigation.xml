@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appnavigation"
+    app:startDestination="@id/calendarioDiario">
+
+    <fragment
+        android:id="@+id/calendarioDiario"
+        android:name="com.example.proyectofinal.App.CalendarioDiario"
+        android:label="fragment_calendario_diario"
+        tools:layout="@layout/fragment_calendario_diario" >
+        <action
+            android:id="@+id/action_calendarioDiario_to_calendarioSemanal"
+            app:destination="@id/calendarioSemanal" />
+        <action
+            android:id="@+id/action_calendarioDiario_to_calendarioMensual"
+            app:destination="@id/calendarioMensual" />
+        <action
+            android:id="@+id/action_calendarioDiario_to_agregarTarea"
+            app:destination="@id/agregarTarea" />
+        <action
+            android:id="@+id/action_calendarioDiario_to_modificarTarea"
+            app:destination="@id/modificarTarea" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarioMensual"
+        android:name="com.example.proyectofinal.App.CalendarioMensual"
+        android:label="fragment_calendario_mensual"
+        tools:layout="@layout/fragment_calendario_mensual" >
+        <action
+            android:id="@+id/action_calendarioMensual_to_calendarioSemanal"
+            app:destination="@id/calendarioSemanal" />
+        <action
+            android:id="@+id/action_calendarioMensual_to_calendarioDiario"
+            app:destination="@id/calendarioDiario" />
+        <action
+            android:id="@+id/action_calendarioMensual_to_agregarTarea"
+            app:destination="@id/agregarTarea" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarioSemanal"
+        android:name="com.example.proyectofinal.App.CalendarioSemanal"
+        android:label="fragment_calendario_semanal"
+        tools:layout="@layout/fragment_calendario_semanal" >
+        <action
+            android:id="@+id/action_calendarioSemanal_to_calendarioDiario"
+            app:destination="@id/calendarioDiario" />
+        <action
+            android:id="@+id/action_calendarioSemanal_to_calendarioMensual"
+            app:destination="@id/calendarioMensual" />
+        <action
+            android:id="@+id/action_calendarioSemanal_to_agregarTarea"
+            app:destination="@id/agregarTarea" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracion"
+        android:name="com.example.proyectofinal.App.Configuracion.Configuracion"
+        android:label="fragment_configuracion"
+        tools:layout="@layout/fragment_configuracion" >
+        <action
+            android:id="@+id/action_configuracion_to_configuracionCuenta"
+            app:destination="@id/configuracionCuenta" />
+        <action
+            android:id="@+id/action_configuracion_to_configuracionTema"
+            app:destination="@id/configuracionTema" />
+        <action
+            android:id="@+id/action_configuracion_to_configuracionNotificaciones"
+            app:destination="@id/configuracionNotificaciones" />
+        <action
+            android:id="@+id/action_configuracion_to_configuracionAyuda"
+            app:destination="@id/configuracionAyuda" />
+        <action
+            android:id="@+id/action_configuracion_to_configuracionAcercaDeNosotros"
+            app:destination="@id/configuracionAcercaDeNosotros" />
+        <action
+            android:id="@+id/action_configuracion_to_configuracionFeedback"
+            app:destination="@id/configuracionFeedback" />
+    </fragment>
+    <fragment
+        android:id="@+id/perezoso"
+        android:name="com.example.proyectofinal.App.Perezoso.Perezoso"
+        android:label="fragment_perezoso"
+        tools:layout="@layout/fragment_perezoso" >
+        <action
+            android:id="@+id/action_perezoso_to_comida"
+            app:destination="@id/PComida" />
+        <action
+            android:id="@+id/action_perezoso_to_ropa"
+            app:destination="@id/PRopa" />
+        <action
+            android:id="@+id/action_perezoso_to_background"
+            app:destination="@id/PBackground" />
+        <argument
+            android:name="hambreProgressC"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="felicidadProgressC"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarTarea"
+        android:name="com.example.proyectofinal.AgregarTarea.AgregarTarea"
+        android:label="fragment_agregar_tarea"
+        tools:layout="@layout/fragment_agregar_tarea" >
+        <action
+            android:id="@+id/action_agregarTarea_to_calendarioDiario"
+            app:destination="@id/calendarioDiario" />
+        <action
+            android:id="@+id/action_agregarTarea_to_calendarioSemanal"
+            app:destination="@id/calendarioSemanal" />
+        <action
+            android:id="@+id/action_agregarTarea_to_calendarioMensual"
+            app:destination="@id/calendarioMensual" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionCuenta"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionCuenta"
+        android:label="fragment_configuracion_cuenta"
+        tools:layout="@layout/fragment_configuracion_cuenta" >
+        <action
+            android:id="@+id/action_configuracionCuenta_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionTema"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionTema"
+        android:label="fragment_configuracion_tema"
+        tools:layout="@layout/fragment_configuracion_tema" >
+        <action
+            android:id="@+id/action_configuracionTema_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionNotificaciones"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionNotificaciones"
+        android:label="fragment_configuracion_notificaciones"
+        tools:layout="@layout/fragment_configuracion_notificaciones" >
+        <action
+            android:id="@+id/action_configuracionNotificaciones_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionAyuda"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionAyuda"
+        android:label="fragment_configuracion_ayuda"
+        tools:layout="@layout/fragment_configuracion_ayuda" >
+        <action
+            android:id="@+id/action_configuracionAyuda_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionAcercaDeNosotros"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionAcercaDeNosotros"
+        android:label="fragment_configuracion_acerca_de_nosotros"
+        tools:layout="@layout/fragment_configuracion_acerca_de_nosotros" >
+        <action
+            android:id="@+id/action_configuracionAcercaDeNosotros_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionFeedback"
+        android:name="com.example.proyectofinal.App.Configuracion.ConfiguracionFeedback"
+        android:label="fragment_configuracion_feedback"
+        tools:layout="@layout/fragment_configuracion_feedback" >
+        <action
+            android:id="@+id/action_configuracionFeedback_to_configuracion"
+            app:destination="@id/configuracion" />
+    </fragment>
+    <fragment
+        android:id="@+id/tienda"
+        android:name="com.example.proyectofinal.App.Tienda"
+        android:label="fragment_tienda"
+        tools:layout="@layout/fragment_tienda" >
+        <action
+            android:id="@+id/action_tienda_to_historial2"
+            app:destination="@id/historial" />
+        <action
+            android:id="@+id/action_tienda_to_productosDisplay"
+            app:destination="@id/productosDisplay" />
+        <action
+            android:id="@+id/action_tienda_to_fragmentContainerTiendaHistorial"
+            app:destination="@id/fragmentContainerTiendaHistorial" />
+    </fragment>
+    <fragment
+        android:id="@+id/historial"
+        android:name="com.example.proyectofinal.App.Historial"
+        android:label="fragment_historial"
+        tools:layout="@layout/fragment_historial" >
+        <action
+            android:id="@+id/action_historial_to_tienda2"
+            app:destination="@id/tienda" />
+        <action
+            android:id="@+id/action_historial_to_fragmentContainerTiendaHistorial"
+            app:destination="@id/fragmentContainerTiendaHistorial" />
+    </fragment>
+    <fragment
+        android:id="@+id/productosDisplay"
+        android:name="com.example.proyectofinal.App.ProductosDisplay"
+        android:label="fragment_productos_display"
+        tools:layout="@layout/fragment_productos_display" >
+        <argument
+            android:name="nombreProducto"
+            app:argType="string" />
+        <argument
+            android:name="urlProducto"
+            app:argType="string" />
+        <argument
+            android:name="precioProducto"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentContainerTiendaHistorial"
+        android:name="com.example.proyectofinal.App.FragmentContainerTiendaHistorial"
+        android:label="fragment_container_tienda_historial"
+        tools:layout="@layout/fragment_container_tienda_historial" >
+        <action
+            android:id="@+id/action_fragmentContainerTiendaHistorial_to_tienda"
+            app:destination="@id/tienda" />
+        <action
+            android:id="@+id/action_fragmentContainerTiendaHistorial_to_historial"
+            app:destination="@id/historial" />
+    </fragment>
+    <fragment
+        android:id="@+id/PComida"
+        android:name="com.example.proyectofinal.App.Perezoso.PComida"
+        android:label="fragment_p_comida"
+        tools:layout="@layout/fragment_p_comida" >
+        <action
+            android:id="@+id/action_PComida_to_perezoso"
+            app:destination="@id/perezoso" />
+        <argument
+            android:name="hambreProgress"
+            app:argType="integer" />
+        <argument
+            android:name="felicidadProgress"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/PBackground"
+        android:name="com.example.proyectofinal.App.Perezoso.PBackground"
+        android:label="fragment_p_background"
+        tools:layout="@layout/fragment_p_background" />
+    <fragment
+        android:id="@+id/PRopa"
+        android:name="com.example.proyectofinal.App.Perezoso.PRopa"
+        android:label="fragment_p_ropa"
+        tools:layout="@layout/fragment_p_ropa" />
+    <fragment
+        android:id="@+id/modificarTarea"
+        android:name="com.example.proyectofinal.App.ModificarTarea"
+        android:label="fragment_modificar_tarea"
+        tools:layout="@layout/fragment_modificar_tarea" >
+        <argument
+            android:name="tarea"
+            app:argType="com.example.proyectofinal.Objetos.Tareas" />
+        <action
+            android:id="@+id/action_modificarTarea_to_calendarioDiario"
+            app:destination="@id/calendarioDiario" />
+    </fragment>
+</navigation>
